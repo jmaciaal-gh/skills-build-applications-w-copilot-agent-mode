@@ -1,0 +1,104 @@
+.app-shell {
+  min-height: 100svh;
+  background: #f7f8fb;
+}
+
+.app-header {
+  border-bottom: 1px solid #d9dee7;
+  background: #ffffff;
+  padding: 24px;
+}
+
+.brand-lockup {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.brand-logo {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+}
+
+.brand-lockup h1 {
+  margin: 0 0 4px;
+  font-size: 32px;
+  line-height: 1.1;
+}
+
+.brand-lockup p {
+  margin: 0;
+  color: #586174;
+}
+
+.app-nav {
+  gap: 8px;
+}
+
+.app-main {
+  padding: 24px;
+}
+
+.resource-section {
+  overflow: hidden;
+  border: 1px solid #d9dee7;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.resource-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: start;
+  padding: 20px 20px 12px;
+  text-align: left;
+}
+
+.resource-heading h2 {
+  margin: 0 0 4px;
+  font-size: 24px;
+}
+
+.resource-heading p {
+  margin: 0;
+  color: #586174;
+}
+
+.resource-table {
+  margin: 0;
+}
+
+.resource-table th,
+.resource-table td {
+  padding: 14px 20px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+@media (max-width: 720px) {
+  .app-header,
+  .app-main {
+    padding: 16px;
+  }
+
+  .brand-lockup {
+    align-items: flex-start;
+  }
+
+  .brand-logo {
+    width: 56px;
+    height: 56px;
+  }
+
+  .brand-lockup h1 {
+    font-size: 24px;
+  }
+
+  .resource-heading {
+    flex-direction: column;
+  }
+}
