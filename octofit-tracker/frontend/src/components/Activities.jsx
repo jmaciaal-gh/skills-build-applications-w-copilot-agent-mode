@@ -1,9 +1,7 @@
+import { buildApiEndpoint } from '../api.js'
 import ResourcePage from './ResourcePage.jsx'
 
-const localhostApiUrl = import.meta.env.VITE_API_URL ?? 'http://localhost:8000'
-const apiEndpoint = import.meta.env.VITE_CODESPACE_NAME
-  ? `https://${import.meta.env.VITE_CODESPACE_NAME}-8000.app.github.dev/api/activities/`
-  : `${localhostApiUrl.replace(/\/$/, '')}/api/activities/`
+const apiEndpoint = buildApiEndpoint('activities')
 
 export default function Activities() {
   return (
