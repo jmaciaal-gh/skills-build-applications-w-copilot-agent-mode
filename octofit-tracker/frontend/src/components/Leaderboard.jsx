@@ -4,7 +4,7 @@ export default function Leaderboard() {
   return (
     <ResourcePage
       title="Leaderboard"
-      resourceName="leaderboard"
+      endpointPath="/api/leaderboard/"
       columns={[
         { key: 'rank', label: 'Rank', render: (entry) => entry.rank },
         { key: 'user', label: 'User', render: (entry) => entry.user },

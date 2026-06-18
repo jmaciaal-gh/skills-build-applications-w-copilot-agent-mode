@@ -4,7 +4,7 @@ export default function Teams() {
   return (
     <ResourcePage
       title="Teams"
-      resourceName="teams"
+      endpointPath="/api/teams/"
       columns={[
         { key: 'name', label: 'Team', render: (team) => team.name },
         { key: 'description', label: 'Description', render: (team) => team.description },

@@ -21,7 +21,7 @@ function StateRow({ columnCount, children }) {
   )
 }
 
-export default function ResourcePage({ title, resourceName, columns }) {
+export default function ResourcePage({ title, endpointPath, columns }) {
   const [records, setRecords] = useState([])
   const [status, setStatus] = useState('loading')
   const [error, setError] = useState('')
@@ -32,7 +32,7 @@ export default function ResourcePage({ title, resourceName, columns }) {
     async function loadRecords() {
       try {
         setStatus('loading')
-        const collection = await fetchCollection(resourceName)
+        const collection = await fetchCollection(endpointPath)
 
         if (isMounted) {
           setRecords(collection)
@@ -51,7 +51,7 @@ export default function ResourcePage({ title, resourceName, columns }) {
     return () => {
       isMounted = false
     }
-  }, [resourceName])
+  }, [endpointPath])
 
   return (
     <section className="resource-section">

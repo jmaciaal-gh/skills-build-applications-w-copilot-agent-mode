@@ -4,7 +4,7 @@ export default function Workouts() {
   return (
     <ResourcePage
       title="Workouts"
-      resourceName="workouts"
+      endpointPath="/api/workouts/"
       columns={[
         { key: 'name', label: 'Workout', render: (workout) => workout.name },
         { key: 'difficulty', label: 'Difficulty', render: (workout) => workout.difficulty },

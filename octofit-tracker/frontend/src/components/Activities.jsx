@@ -4,7 +4,7 @@ export default function Activities() {
   return (
     <ResourcePage
       title="Activities"
-      resourceName="activities"
+      endpointPath="/api/activities/"
       columns={[
         { key: 'activityType', label: 'Activity', render: (activity) => activity.activityType },
         { key: 'durationMinutes', label: 'Minutes', render: (activity) => activity.durationMinutes },
