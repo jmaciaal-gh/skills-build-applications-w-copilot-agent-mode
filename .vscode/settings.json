@@ -1,0 +1,11 @@
+{
+    "chat.mcp.serverSampling": {
+        "skills-build-applications-w-copilot-agent-mode/.vscode/mcp.json: my-mcp-server-21b494ab": {
+            "allowedModels": [
+                "copilotcli/auto",
+                "copilot/auto",
+                "copilot/gpt-5.5"
+            ]
+        }
+    }
+}
